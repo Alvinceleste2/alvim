@@ -1,5 +1,34 @@
 return {
   {
+    "lukas-reineke/indent-blankline.nvim",
+    event = "LazyFile",
+    lazy = true,
+    version = "3.5.4",
+    opts = {
+      indent = {
+        char = "│",
+        tab_char = "│",
+      },
+      scope = { show_start = false, show_end = false },
+      exclude = {
+        filetypes = {
+          "help",
+          "alpha",
+          "dashboard",
+          "neo-tree",
+          "Trouble",
+          "trouble",
+          "lazy",
+          "mason",
+          "notify",
+          "toggleterm",
+          "lazyterm",
+        },
+      },
+    },
+    main = "ibl",
+  },
+  {
     "nvim-tree/nvim-tree.lua",
     priority = 900,
     lazy = true,
@@ -69,12 +98,12 @@ return {
     lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
     opts = function()
       local logo = [[
-         ██╗      █████╗ ███████╗██╗   ██╗██╗   ██╗██╗███╗   ███╗          Z
-         ██║     ██╔══██╗╚══███╔╝╚██╗ ██╔╝██║   ██║██║████╗ ████║      Z    
-         ██║     ███████║  ███╔╝  ╚████╔╝ ██║   ██║██║██╔████╔██║   z       
-         ██║     ██╔══██║ ███╔╝    ╚██╔╝  ╚██╗ ██╔╝██║██║╚██╔╝██║ z         
-         ███████╗██║  ██║███████╗   ██║    ╚████╔╝ ██║██║ ╚═╝ ██║           
-         ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝     ╚═══╝  ╚═╝╚═╝     ╚═╝           
+     █████╗ ██╗     ██╗   ██╗██╗███╗   ███╗
+    ██╔══██╗██║     ██║   ██║██║████╗ ████║
+    ███████║██║     ██║   ██║██║██╔████╔██║
+    ██╔══██║██║     ╚██╗ ██╔╝██║██║╚██╔╝██║
+    ██║  ██║███████╗ ╚████╔╝ ██║██║ ╚═╝ ██║
+    ╚═╝  ╚═╝╚══════╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
     ]]
 
       logo = string.rep("\n", 8) .. logo .. "\n\n"
