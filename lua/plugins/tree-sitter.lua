@@ -49,6 +49,8 @@ return {
         "vimdoc",
         "xml",
         "yaml",
+        "latex",
+        "bibtex",
       },
       auto_install = true,
       incremental_selection = {
