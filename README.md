@@ -1,2 +1,1 @@
-![alt text](https://github.com/alvinceleste/nvim-config/blob/main/assets/home.png?raw=true)
-assets/home.png
+![home](https://github.com/user-attachments/assets/e7d8956b-ce18-4c36-a20c-e575f9df4865)
